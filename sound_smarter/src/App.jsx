@@ -8,17 +8,20 @@ function App() {
   const [findWord, setFindWord] = useState('')
   const [finalSentence, setFinalSentence] = useState('')
   const [words, setWords] = useState([])
+  
 
 const fetchMe = (newWord) => {
   const makeArray= newWord.split(" ")
   const refineArray= makeArray.filter(n => n != '')
+  const rapidAPIKEY=''
+  
 
   if (refineArray.length <= 1){
   const options = {
     method: 'GET',
     url: `https://wordsapiv1.p.rapidapi.com/words/${newWord}/typeOf`,
     headers: {
-      'X-RapidAPI-Key': 'd81d65a20emsh02e31624cfbeb50p1432f1jsn1552763ee756',
+      'X-RapidAPI-Key': rapidAPIKEY,
       'X-RapidAPI-Host': 'wordsapiv1.p.rapidapi.com'
     }
   }
@@ -40,7 +43,7 @@ const fetchMe = (newWord) => {
     method: 'GET',
     url: `https://wordsapiv1.p.rapidapi.com/words/${n}/typeOf`,
     headers: {
-      'X-RapidAPI-Key': 'd81d65a20emsh02e31624cfbeb50p1432f1jsn1552763ee756',
+      'X-RapidAPI-Key': rapidAPIKEY,
       'X-RapidAPI-Host': 'wordsapiv1.p.rapidapi.com'
     }
   }
