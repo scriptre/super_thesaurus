@@ -19,7 +19,7 @@ const fetchMe = (newWord) => {
     method: 'GET',
     url: `https://wordsapiv1.p.rapidapi.com/words/${newWord}/typeOf`,
     headers: {
-      'X-RapidAPI-Key': 'd81d65a20emsh02e31624cfbeb50p1432f1jsn1552763ee756',
+      'X-RapidAPI-Key': '',
       'X-RapidAPI-Host': 'wordsapiv1.p.rapidapi.com'
     }
   }
@@ -41,7 +41,7 @@ const fetchMe = (newWord) => {
     method: 'GET',
     url: `https://wordsapiv1.p.rapidapi.com/words/${eachWord}/typeOf`,
     headers: {
-      'X-RapidAPI-Key': 'd81d65a20emsh02e31624cfbeb50p1432f1jsn1552763ee756',
+      'X-RapidAPI-Key': '',
       'X-RapidAPI-Host': 'wordsapiv1.p.rapidapi.com'
     }
   }
